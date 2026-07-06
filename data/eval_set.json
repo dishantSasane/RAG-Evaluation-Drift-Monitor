@@ -1,0 +1,72 @@
+[
+  {
+    "id": "eval_001",
+    "question": "What are the three high-level templates the survey describes for applying deep learning in scientific settings?",
+    "ground_truth_answer": "The survey describes three templates: (1) Prediction Problems, where deep learning maps inputs to predicted outputs; (2) From Predictions to Understanding, where interpretability methods reveal why a model made a prediction; and (3) Complex Transformations of Input Data, where deep learning automates processing of large volumes of scientific data such as microscopy images.",
+    "source_section": "Section 2.1 Templates for Deep Learning in Scientific Settings",
+    "chunk_id": "chunk_tbd"
+  },
+  {
+    "id": "eval_002",
+    "question": "What distinguishes instance segmentation from semantic segmentation according to the survey?",
+    "ground_truth_answer": "In semantic segmentation, all pixels belonging to the same category are grouped together under one label. In instance segmentation, pixels are further separated by individual object instance — for example, three pedestrians would each have their own separate pixel labels rather than all being grouped as 'pedestrian'.",
+    "source_section": "Section 4.3.3 Semantic Segmentation and Instance Segmentation",
+    "chunk_id": "chunk_tbd"
+  },
+  {
+    "id": "eval_003",
+    "question": "Why does the survey recommend graph neural networks for chemistry tasks?",
+    "ground_truth_answer": "The survey recommends GNNs for chemistry because molecular data has a natural graph structure — atoms correspond to nodes and chemical bonds correspond to edges. GNNs can compute useful information by aggregating feature vectors from neighboring nodes, making them well suited to tasks like predicting molecular properties and determining protein interfaces.",
+    "source_section": "Section 4.4 Graph Neural Networks",
+    "chunk_id": "chunk_tbd"
+  },
+  {
+    "id": "eval_004",
+    "question": "What problem does the Transformer architecture solve that RNNs struggled with?",
+    "ground_truth_answer": "RNNs struggled with long-range dependencies because they process sequences token by token and must remember information across many steps, which is challenging. Transformers solve this by taking the entire sequence as input at once and using self-attention to directly model relationships between any two tokens regardless of their distance, eliminating the need to carry information through many sequential steps.",
+    "source_section": "Section 4.5.6 Transformers",
+    "chunk_id": "chunk_tbd"
+  },
+  {
+    "id": "eval_005",
+    "question": "What is the two-step process of transfer learning as described in the survey?",
+    "ground_truth_answer": "Transfer learning consists of a pretraining step followed by a finetuning step. In pretraining, a neural network is trained on a large, generic task such as ImageNet image classification, allowing it to learn useful general features stored in its parameters. In finetuning, the pretrained network is then further trained on the specific target task of interest, leveraging the previously learned features to improve performance and convergence speed.",
+    "source_section": "Section 5.1 Transfer Learning",
+    "chunk_id": "chunk_tbd"
+  },
+  {
+    "id": "eval_006",
+    "question": "How does the survey define self-supervised learning and what is one example of a pretext task for images?",
+    "ground_truth_answer": "Self-supervised learning is a method where labels are automatically generated from the raw data itself via a pretext task, without requiring manual labelling. One example pretext task for images is rotation prediction — images are randomly rotated by one of four angles and the model is trained to classify the degree of rotation, which encourages it to learn useful image representations.",
+    "source_section": "Section 6.1 Self-Supervised Learning",
+    "chunk_id": "chunk_tbd"
+  },
+  {
+    "id": "eval_007",
+    "question": "What is the difference between saliency maps and feature ablation methods for interpretability?",
+    "ground_truth_answer": "Saliency maps work by computing the gradient of the model's output prediction with respect to the input, producing a mask that highlights which input regions most influence the prediction. Feature ablation methods instead estimate feature importance by removing or perturbing subsets of input features and measuring the effect on the output — for example, Shapley values average the predictive power of a feature across all possible subsets of features.",
+    "source_section": "Section 7.1 Feature Attribution and Per Example Interpretability",
+    "chunk_id": "chunk_tbd"
+  },
+  {
+    "id": "eval_008",
+    "question": "What are the two fundamental goals of generative modelling according to the survey?",
+    "ground_truth_answer": "The two fundamental goals are: (1) modelling and enabling sampling from high-dimensional data distributions, such as generating realistic images of human faces; and (2) learning lower-dimensional latent encodings of the data that capture key properties of interest, which is useful for understanding the underlying structure of the data.",
+    "source_section": "Section 8.1 Generative Models",
+    "chunk_id": "chunk_tbd"
+  },
+  {
+    "id": "eval_009",
+    "question": "What does the survey say is a key challenge when applying reinforcement learning without a simulator?",
+    "ground_truth_answer": "Without a simulator, the agent only has access to recorded sequences of past actions, states, and rewards — the offline setting. The key challenge is that thorough validation and evaluation of learned policies is difficult in this setting, since the agent cannot interact with a live environment to test whether its policy is correct.",
+    "source_section": "Section 8.2.2 RL without Simulators",
+    "chunk_id": "chunk_tbd"
+  },
+  {
+    "id": "eval_010",
+    "question": "What does the survey recommend as the first step when starting with a new deep learning problem?",
+    "ground_truth_answer": "The survey recommends trying the simplest method first before reaching for complex deep learning models. This includes checking how a naive majority baseline performs, using a smaller subsampled version of the dataset for faster preliminary testing, and starting with well-tested pretrained models and standard architectures rather than designing a new model from scratch.",
+    "source_section": "Section 9 Implementation Tips",
+    "chunk_id": "chunk_tbd"
+  }
+]

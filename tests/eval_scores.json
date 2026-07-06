@@ -1,0 +1,72 @@
+[
+  {
+    "id": "eval_001",
+    "question": "What are the three high-level templates the survey describes for applying deep learning in scientific settings?",
+    "precision_at_k": 0.2,
+    "faithfulness": 0.0,
+    "answer_relevance": 0.0
+  },
+  {
+    "id": "eval_002",
+    "question": "What distinguishes instance segmentation from semantic segmentation according to the survey?",
+    "precision_at_k": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevance": 1.0
+  },
+  {
+    "id": "eval_003",
+    "question": "Why does the survey recommend graph neural networks for chemistry tasks?",
+    "precision_at_k": 0.8,
+    "faithfulness": 0.8,
+    "answer_relevance": 0.8
+  },
+  {
+    "id": "eval_004",
+    "question": "What problem does the Transformer architecture solve that RNNs struggled with?",
+    "precision_at_k": 0.4,
+    "faithfulness": 1.0,
+    "answer_relevance": 1.0
+  },
+  {
+    "id": "eval_005",
+    "question": "What is the two-step process of transfer learning as described in the survey?",
+    "precision_at_k": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevance": 1.0
+  },
+  {
+    "id": "eval_006",
+    "question": "How does the survey define self-supervised learning and what is one example of a pretext task for images?",
+    "precision_at_k": 0.8,
+    "faithfulness": 1.0,
+    "answer_relevance": 1.0
+  },
+  {
+    "id": "eval_007",
+    "question": "What is the difference between saliency maps and feature ablation methods for interpretability?",
+    "precision_at_k": 0.8,
+    "faithfulness": 0.8,
+    "answer_relevance": 1.0
+  },
+  {
+    "id": "eval_008",
+    "question": "What are the two fundamental goals of generative modelling according to the survey?",
+    "precision_at_k": 0.8,
+    "faithfulness": 1.0,
+    "answer_relevance": 1.0
+  },
+  {
+    "id": "eval_009",
+    "question": "What does the survey say is a key challenge when applying reinforcement learning without a simulator?",
+    "precision_at_k": 0.2,
+    "faithfulness": 1.0,
+    "answer_relevance": 0.8
+  },
+  {
+    "id": "eval_010",
+    "question": "What does the survey recommend as the first step when starting with a new deep learning problem?",
+    "precision_at_k": 0.2,
+    "faithfulness": 1.0,
+    "answer_relevance": 0.2
+  }
+]

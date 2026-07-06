@@ -2,8 +2,3 @@
 __pycache__/
 *.pyc
 chroma_db/
-eval_results.json
-eval_scores.json
-baseline_scores.json
-score_history.json
-

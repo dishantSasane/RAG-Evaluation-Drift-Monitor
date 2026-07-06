@@ -1,0 +1,5 @@
+{
+  "precision_at_k": 0.62,
+  "faithfulness": 0.86,
+  "answer_relevance": 0.78
+}

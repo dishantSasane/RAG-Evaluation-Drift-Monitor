@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "2026-07-06T06:43:30.062459",
+    "means": {
+      "precision_at_k": 0.62,
+      "faithfulness": 0.86,
+      "answer_relevance": 0.78
+    }
+  }
+]

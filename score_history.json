@@ -1,10 +1,10 @@
 [
-  {
-    "timestamp": "2026-07-06T06:43:30.062459",
-    "means": {
-      "precision_at_k": 0.62,
-      "faithfulness": 0.86,
-      "answer_relevance": 0.78
+    {
+        "run_date": "2026-07-14 20:11:51",
+        "metrics": {
+            "precision_at_k": 0.8558441558414286,
+            "faithfulness": 0.6,
+            "answer_relevance": 1.0
+        }
     }
-  }
 ]

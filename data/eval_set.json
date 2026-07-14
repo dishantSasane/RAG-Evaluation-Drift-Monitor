@@ -1,72 +1,42 @@
 [
-  {
-    "id": "eval_001",
-    "question": "What are the three high-level templates the survey describes for applying deep learning in scientific settings?",
-    "ground_truth_answer": "The survey describes three templates: (1) Prediction Problems, where deep learning maps inputs to predicted outputs; (2) From Predictions to Understanding, where interpretability methods reveal why a model made a prediction; and (3) Complex Transformations of Input Data, where deep learning automates processing of large volumes of scientific data such as microscopy images.",
-    "source_section": "Section 2.1 Templates for Deep Learning in Scientific Settings",
-    "chunk_id": "chunk_tbd"
-  },
-  {
-    "id": "eval_002",
-    "question": "What distinguishes instance segmentation from semantic segmentation according to the survey?",
-    "ground_truth_answer": "In semantic segmentation, all pixels belonging to the same category are grouped together under one label. In instance segmentation, pixels are further separated by individual object instance — for example, three pedestrians would each have their own separate pixel labels rather than all being grouped as 'pedestrian'.",
-    "source_section": "Section 4.3.3 Semantic Segmentation and Instance Segmentation",
-    "chunk_id": "chunk_tbd"
-  },
-  {
-    "id": "eval_003",
-    "question": "Why does the survey recommend graph neural networks for chemistry tasks?",
-    "ground_truth_answer": "The survey recommends GNNs for chemistry because molecular data has a natural graph structure — atoms correspond to nodes and chemical bonds correspond to edges. GNNs can compute useful information by aggregating feature vectors from neighboring nodes, making them well suited to tasks like predicting molecular properties and determining protein interfaces.",
-    "source_section": "Section 4.4 Graph Neural Networks",
-    "chunk_id": "chunk_tbd"
-  },
-  {
-    "id": "eval_004",
-    "question": "What problem does the Transformer architecture solve that RNNs struggled with?",
-    "ground_truth_answer": "RNNs struggled with long-range dependencies because they process sequences token by token and must remember information across many steps, which is challenging. Transformers solve this by taking the entire sequence as input at once and using self-attention to directly model relationships between any two tokens regardless of their distance, eliminating the need to carry information through many sequential steps.",
-    "source_section": "Section 4.5.6 Transformers",
-    "chunk_id": "chunk_tbd"
-  },
-  {
-    "id": "eval_005",
-    "question": "What is the two-step process of transfer learning as described in the survey?",
-    "ground_truth_answer": "Transfer learning consists of a pretraining step followed by a finetuning step. In pretraining, a neural network is trained on a large, generic task such as ImageNet image classification, allowing it to learn useful general features stored in its parameters. In finetuning, the pretrained network is then further trained on the specific target task of interest, leveraging the previously learned features to improve performance and convergence speed.",
-    "source_section": "Section 5.1 Transfer Learning",
-    "chunk_id": "chunk_tbd"
-  },
-  {
-    "id": "eval_006",
-    "question": "How does the survey define self-supervised learning and what is one example of a pretext task for images?",
-    "ground_truth_answer": "Self-supervised learning is a method where labels are automatically generated from the raw data itself via a pretext task, without requiring manual labelling. One example pretext task for images is rotation prediction — images are randomly rotated by one of four angles and the model is trained to classify the degree of rotation, which encourages it to learn useful image representations.",
-    "source_section": "Section 6.1 Self-Supervised Learning",
-    "chunk_id": "chunk_tbd"
-  },
-  {
-    "id": "eval_007",
-    "question": "What is the difference between saliency maps and feature ablation methods for interpretability?",
-    "ground_truth_answer": "Saliency maps work by computing the gradient of the model's output prediction with respect to the input, producing a mask that highlights which input regions most influence the prediction. Feature ablation methods instead estimate feature importance by removing or perturbing subsets of input features and measuring the effect on the output — for example, Shapley values average the predictive power of a feature across all possible subsets of features.",
-    "source_section": "Section 7.1 Feature Attribution and Per Example Interpretability",
-    "chunk_id": "chunk_tbd"
-  },
-  {
-    "id": "eval_008",
-    "question": "What are the two fundamental goals of generative modelling according to the survey?",
-    "ground_truth_answer": "The two fundamental goals are: (1) modelling and enabling sampling from high-dimensional data distributions, such as generating realistic images of human faces; and (2) learning lower-dimensional latent encodings of the data that capture key properties of interest, which is useful for understanding the underlying structure of the data.",
-    "source_section": "Section 8.1 Generative Models",
-    "chunk_id": "chunk_tbd"
-  },
-  {
-    "id": "eval_009",
-    "question": "What does the survey say is a key challenge when applying reinforcement learning without a simulator?",
-    "ground_truth_answer": "Without a simulator, the agent only has access to recorded sequences of past actions, states, and rewards — the offline setting. The key challenge is that thorough validation and evaluation of learned policies is difficult in this setting, since the agent cannot interact with a live environment to test whether its policy is correct.",
-    "source_section": "Section 8.2.2 RL without Simulators",
-    "chunk_id": "chunk_tbd"
-  },
-  {
-    "id": "eval_010",
-    "question": "What does the survey recommend as the first step when starting with a new deep learning problem?",
-    "ground_truth_answer": "The survey recommends trying the simplest method first before reaching for complex deep learning models. This includes checking how a naive majority baseline performs, using a smaller subsampled version of the dataset for faster preliminary testing, and starting with well-tested pretrained models and standard architectures rather than designing a new model from scratch.",
-    "source_section": "Section 9 Implementation Tips",
-    "chunk_id": "chunk_tbd"
-  }
+    {
+        "question": "Under what condition does HDFC Bank reserve the right to close a customer's account at any time without giving any prior notice?",
+        "expected_answer": "The bank reserves the right to close an account without prior notice if the Average Monthly/Quarterly Balance is not maintained by the customer."
+    },
+    {
+        "question": "What is the exact continuous timeframe of inactivity required for a Savings or Current Account to be classified as 'Dormant', and what are the specific steps required by the account holders to reactivate it?",
+        "expected_answer": "An account becomes dormant if there are no customer-initiated transactions for a continuous period of two years. To change the status back to 'Active', all joint holders must provide written instructions and initiate a transaction at their home branch."
+    },
+    {
+        "question": "What balances, financial year credit limits, and monthly withdrawal thresholds are enforced on a Basic Savings Bank Deposit Small Account (BSBDA Small Account)?",
+        "expected_answer": "The account balances must not exceed Rs. 50,000, total credits must not exceed Rs. 1,00,000 in a financial year, and the aggregate of withdrawals and transfers must not exceed Rs. 10,000 in a calendar month."
+    },
+    {
+        "question": "What is the penalty rate for the premature closure of Fixed Deposits, and for which specific booking tenor is this premature penalty explicitly waived?",
+        "expected_answer": "The penalty on premature closure of Fixed Deposits has been fixed at the rate of 1%. However, the premature penalty is not applicable for FDs booked for a tenor of 7-14 days."
+    },
+    {
+        "question": "How is the penal interest rate calculated if a customer delays the payment of a Recurring Deposit instalment?",
+        "expected_answer": "The customer is liable to pay penal interest at the rate of the contracted Recurring Deposit interest rate plus 2% p.a. (calculated on a 30/360 basis) for the actual period of delay."
+    },
+    {
+        "question": "What are the rules regarding PIN verification and transaction amount limits when executing a contactless payment using an HDFC Debit Card?",
+        "expected_answer": "For transactions of Rs. 5,000 or less, a customer can just tap the card to pay without entering a PIN. For transactions above Rs. 5,000, the customer must input their PIN to authenticate the payment."
+    },
+    {
+        "question": "What are the maximum daily and monthly transaction limits imposed on cash withdrawals conducted at merchant Point-of-Sale (POS) terminals using a Debit Card?",
+        "expected_answer": "The maximum upper limit for cash withdrawals at merchant establishments is Rs. 2,000 per day, with a maximum total limit of Rs. 10,000 per calendar month."
+    },
+    {
+        "question": "Within how many days must a customer report a wrong debit entry or transaction dispute related to ATM usage in writing to the bank?",
+        "expected_answer": "Any transaction dispute must be reported to the bank in writing within 30 days from the date of the disputed transaction."
+    },
+    {
+        "question": "What is the standard turnaround time (TAT) for the bank to auto-reverse a blocked amount from a failed/unsuccessful transaction, and what is the exact daily compensation penalty paid to the customer if this timeline is breached?",
+        "expected_answer": "The bank will auto-reverse the blocked amount within T+5 days (5 days). If there is a delay beyond this turnaround time, a compensation framework penalty of Rs. 100 per day will be paid to the customer."
+    },
+    {
+        "question": "What categories of prohibited transaction activities are explicitly banned from being conducted on an HDFC International Debit Card under the Exchange Control Regulations of the Reserve Bank of India and FEMA 1999?",
+        "expected_answer": "The card cannot be used for transactions involving Overseas Forex trading, lottery, betting, gambling, dating, Bitcoins, Virtual currency, and any other prohibited transactions directed under the Foreign Exchange Management Act (FEMA), 1999."
+    }
 ]
